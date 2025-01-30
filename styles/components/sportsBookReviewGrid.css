@@ -1,0 +1,113 @@
+.Header {
+    background: linear-gradient(134.42deg, #004FA1 16.18%, #17315B 100%);
+    font-family: 'titilliumweb-Bold';
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 10px 15px;
+  }
+  
+  .reviewGrid {
+    padding: 8px 15px;
+  }
+  .reviewCell {
+    display: none; /* Hidden in Mobile */
+}
+  
+  .reviewHeading {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+    padding: 8px 15px;
+    background: rgba(247, 252, 255, 1);
+    color:rgba(0, 102, 204, 1);
+    font-family: 'titilliumweb-Bold';
+  
+  }
+  .reviewDetails {
+    padding: 12px 16px;
+  }
+  .row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    flex: 0 0 130px;
+    font-size: 12px;
+    color:rgba(120, 120, 120, 1);
+    line-height: 16px;
+    font-weight: 400;
+    font-family: 'titilliumweb-Regular';  
+  
+  }
+  .ratingScore{
+    font-size: 13px;
+    color:rgba(0, 0, 0, 1);
+    line-height: 16px;
+    font-weight: 400;
+    font-family: 'titilliumweb-Regular';  
+  }
+  .stars {
+    gap: 4px;
+  }
+  
+  .highlight {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color:rgba(0, 0, 0, 1);
+    font-family: 'titilliumweb-Regular';  
+  }
+  
+
+
+  @media (min-width: 768px) {
+    .reviewGrid {
+      padding: 15px;
+      background: white;
+      border-radius: 5px;
+    }
+    .reviewHeading {
+        background:rgba(255, 255, 255, 1);
+      }
+      .reviewDetails{
+        display: grid;
+        grid-template-columns: 1.5fr  0.5fr; 
+        align-items: center;
+        padding: 12px 15px;
+        justify-items: end;
+      }
+
+    .reviewRow {
+      display: grid;
+      grid-template-columns: 1.5fr 0.7fr 2.8fr; 
+      align-items: center;
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .reviewCell {
+      display: grid;
+      grid-template-columns: 1.5fr 0.7fr 2.8fr;
+      font-size: 14px;
+      font-weight: 700;
+      background: rgba(247, 252, 255, 1);
+      color: rgba(0, 102, 204, 1);
+      padding: 12px 15px;
+      border-bottom: 2px solid #ddd;
+      text-align: left;
+    }
+   .label{
+    display: none;
+   }
+  }
+  
+  @media (min-width: 1049px) {
+    .sportsBookGrid{
+        margin : 0 32px;
+        border-radius: 8px;
+        border: 1px solid rgba(218, 228, 233, 1);
+    }
+  }

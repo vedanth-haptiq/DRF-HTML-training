@@ -1,0 +1,89 @@
+.sportsBettingHome{
+    font-family: 'titilliumweb-Regular';
+    padding: 16px 12px;
+    background: linear-gradient(134.42deg, #004FA1 16.18%, #17315B 100%);
+    border-radius: 8px;
+    margin: 20px 15px;
+ }
+  .headerSection h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'titilliumweb-Bold';
+    margin-bottom: 8px;
+  }
+  .headerSection p {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'titilliumweb-SemiBold';
+    margin-bottom: 12px;
+  }
+  .mobileHidden{
+    display: none;
+  }
+  .dropdownWrapper {
+    margin-bottom: 16px;
+  }
+  .dropdownWrapper label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'titilliumweb-SemiBold';
+    color: rgba(255, 255, 255, 1);
+  }
+  .customDropdown {
+    position: relative;
+  }
+  .dropdownSelect {
+    width: 100%;
+    padding: 8px 14px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    gap: 12px;
+    font-family: 'titilliumweb-Regular';
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: rgba(120, 120, 120, 1);
+  }
+
+@media screen and (min-width: 768px) {
+    .sportsBettingHome{
+        padding: 16px 16px;
+     }
+    .dropdownSection{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+    .dropdownWrapper{
+        width: 240px;  
+    }
+    
+}
+
+@media screen and (min-width: 1049px) {
+    
+    .sportsBettingHome{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 24px 24px;
+        margin: 32px 32px;
+        gap: 115px;
+    }
+    .dropdownSection{
+        gap: 48px;
+        align-items: center;
+    }
+
+
+}

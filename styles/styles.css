@@ -1,0 +1,32 @@
+@import './components/sportsNews.css';
+@import './components/sportsBookReview.css';
+@import './components/sportsBookReviewGrid.css';
+@import './components/offers.css';
+@import './components/sportsBettingHome.css';
+
+
+@font-face {
+    font-family: 'titilliumweb-Regular';
+    src: url('../../fonts/titilliumWeb-Regular.woff2') format('woff2'),
+         url('../../fonts/titilliumWeb-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'titilliumweb-SemiBold';
+    src: url('../../fonts/titilliumWeb-SemiBold.woff2') format('woff2'),
+         url('../../fonts/titilliumWeb-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'titilliumweb-Bold';
+    src: url('../../fonts//titilliumweb-bold.woff2') format('woff2'),
+         url('../../fonts/titilliumweb-bold.woff') format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* .container{
+  max-width: 375px;
+} */
