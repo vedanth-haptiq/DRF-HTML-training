@@ -126,6 +126,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr; 
         gap: 8px;   
+        
     }
     .bonus{
         margin-bottom: 2px;
@@ -138,15 +139,17 @@
 @media screen and (min-width: 1049px) {
     .cardContent{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1.5fr ; 
         gap: 16px;
     }
+
    
     .offersSection {
         margin: 32px 32px;
     }
     .offerCard{
-        
+        display: grid;
+        grid-template-columns: 33fr 6.24fr 0.01fr;
         margin: 0;
         padding: 16px 24px;
         margin-bottom: 20px;
@@ -161,5 +164,6 @@
     .buttonGroup {
         display: flex;
         flex-direction: column;
+        gap: 12px;
     }
 }

@@ -147,11 +147,11 @@
   @media screen and (min-width: 1049px) {
 
     .newsWrapper{
-        padding: 0;
+        padding: 0 16px 0 16px;
     }
     .newsContainer{
         margin: 0 32px 0 32px;
-        padding: 0 24px 0 24px;
+        
     }
     .header{
         padding: 10px 24px;
