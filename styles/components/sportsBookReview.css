@@ -1,118 +1,138 @@
 .mainHeader {
-    font-family: 'titilliumweb-Bold';
+  font-family: "titilliumweb-Bold";
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  margin-top: 20px;
+  color: rgba(34, 34, 34, 1);
+  text-align: center;
+}
+
+.reviewCard {
+  border: 1px solid rgba(218, 228, 233, 1);
+  border-radius: 8px;
+  margin: 15px 20px;
+  padding: 16px;
+  box-shadow: 2px 2px 50px 0px rgba(133, 150, 195, 0.25);
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  font-family: "titilliumweb-SemiBold";
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(0, 102, 204, 1);
+  font-weight: 600;
+}
+
+.reviewDescription {
+  font-family: "titilliumweb-Regular";
+  font-size: 15px;
+  margin: 10px 0;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: rgba(218, 228, 233, 1);
+  margin-bottom: 24px;
+}
+.reviewFooter {
+  display: flex;
+  align-items: start;
+}
+
+.footerContent {
+  margin-left: 12px;
+}
+.brandName {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgba(34, 34, 34, 1);
+  margin: 6px 0 8px 0;
+
+  font-family: "titilliumweb-Bold";
+}
+.rating {
+  font-size: 12px;
+  color: rgba(102, 102, 102, 1);
+  line-height: 16px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 5px;
+}
+
+.stars svg {
+  width: 18px;
+  height: 17px;
+}
+
+.score {
+  font-size: 12px;
+  color: #555;
+}
+
+@media (min-width: 768px) {
+  .mainHeader {
+    font-family: "titilliumweb-Bold";
     font-size: 19px;
     line-height: 24px;
     font-weight: 700;
     margin-bottom: 16px;
     margin-top: 20px;
-    color:rgba(34, 34, 34, 1);
+    color: rgba(34, 34, 34, 1);
     text-align: center;
   }
-  
+
   .reviewCard {
-    border: 1px solid rgba(218, 228, 233, 1);
-    border-radius: 8px;
-    margin: 15px 20px;
-    padding: 15px;
-    box-shadow: 2px 2px 50px 0px rgba(133, 150, 195, 0.25);
-  
+    margin: 16px 14px;
   }
-  
-  .reviewHeader {
-    display: flex;
-    align-items: center;
-    font-family: 'titilliumweb-SemiBold';
-    font-size: 15px;
-    line-height: 20px;
-    color:rgba(0, 102, 204, 1);
-    font-weight: 600;
+  .sportsBookCards {
+    margin: 0px 2px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .reviewDescription {
-    font-family: 'titilliumweb-Regular';
-    font-size: 15px;
-    margin: 10px 0;
-    line-height: 20px;
-    font-weight: 600;
+  .viewMore {
     margin-bottom: 32px;
   }
-  
-  
-  .divider {
-    border: 0;
-    height: 1px;
-    background-color: rgba(218, 228, 233, 1);
-    margin-bottom: 24px;
-  
-  }
-  .reviewFooter {
-    display: flex;
-    align-items: start;
-  }
-  
-  .footerContent {
-    margin-left: 12px
-  }
-  .brandName {
-    font-size: 17px;
-    line-height: 24px;
+}
+
+@media (min-width: 1349px) {
+  .mainHeader {
+    font-family: "titilliumweb-Bold";
+    font-size: 24px;
+    line-height: 32px;
     font-weight: 700;
+    margin-bottom: 16px;
+    margin-top: 20px;
     color: rgba(34, 34, 34, 1);
-    margin:6px 0 8px 0;
-  
-    font-family: 'titilliumweb-Bold';
-  }
-  .rating {
-    font-size: 12px;
-    color: rgba(102, 102, 102, 1);
-    line-height: 16px;
-    font-weight: 400;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-  }
-  
-  .stars {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 5px;
-  }
-  
-  .stars svg {
-    width: 18px;
-    height: 17px;
-  }
-  
-  .score {
-    font-size: 12px;
-    color: #555;
+    text-align: center;
   }
 
+  .reviewCard {
+    margin: 0;
+  }
 
-
-  @media (min-width: 768px) {
-    .reviewCard {
-      margin: 16px 14px;
-    }
-    .sportsBookCards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-    }
+  .sportsBookCards {
+    margin: 16px 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .viewMore {
+    margin-bottom: 32px;
+  }
 }
-  
-@media (min-width: 1049px) {
-    .reviewCard{
-        margin: 0;
-    }
-    
-    .sportsBookCards {
-        margin: 16px 32px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 cards in one row */
-        gap: 24px;
-    }
-    .viewMore {
-        margin-bottom: 32px;
-    }
-}
-

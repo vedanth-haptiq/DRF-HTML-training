@@ -1,169 +1,203 @@
-.offersSection h3{
-    font-family: 'titilliumweb-Bold';
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 24px;
-    color: rgba(0, 0, 0, 1);
-    margin-bottom: 16px;
-    margin: 0 0 12px 16px; 
+.offersSection h3 {
+  font-family: "titilliumweb-Bold";
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 16px;
+  margin: 0 0 12px 16px;
+}
+.offersSection {
+  margin-top: 32px;
+  font-family: "titilliumweb-Regular";
+}
+.offerCard {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid rgba(218, 228, 233, 1);
+  box-shadow: 0 4px 8px rgba(133, 150, 195, 0.26);
+  padding: 16px 12px;
+  margin: 15px;
+}
+
+.offerHeader {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+.offerHeading h2 {
+  font-family: "titilliumweb-SemiBold";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 8px;
+  color: rgba(102, 102, 102, 1);
+}
+.bonus {
+  font-family: "titilliumweb-SemiBold";
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 8px;
+}
+.logo {
+  background-color: black;
+  width: 89px;
+  height: 89px;
+  border-radius: 4px;
+}
+
+.starIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.tickMark {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.detailsList {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.detailsList li {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.copyCodeButton {
+  padding: 10px;
+  border: 1px solid rgba(0, 102, 204, 1);
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgba(0, 102, 204, 1);
+  background-color: #fff;
+  font-family: "titilliumweb-SemiBold";
+}
+.playNowButton {
+  background-color: rgba(0, 102, 204, 1);
+  color: #fff;
+  padding: 10px;
+  border: 1px solid rgba(0, 102, 204, 1);
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "titilliumweb-SemiBold";
+}
+.viewMore {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cardContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
-  .offersSection {
-    margin-top: 32px;
-    font-family: 'titilliumweb-Regular';
-  }
-  .offerCard {
-    background-color: #fff;
-    border-radius: 8px;
-    border: 1px solid rgba(218, 228, 233, 1);
-    box-shadow: 0 4px 8px rgba(133, 150, 195, 0.26);
-    padding: 16px 12px;
-    margin: 15px;
-  }
-  
   .offerHeader {
     display: flex;
-    margin-bottom: 16px;
-    gap: 12px;
-
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 55px;
   }
-   .offerHeading h2{
-    font-family: 'titilliumweb-SemiBold';
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 20px;
-    margin-bottom: 8px;
-    color: rgba(102, 102, 102, 1);
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttonGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
   }
   .bonus {
-    font-family: 'titilliumweb-SemiBold';
-    font-size: 17px;
+    margin-bottom: 2px;
+  }
+  .playNowButton .copyCodeButton {
+    padding: 16px 12px;
+  }
+  .viewMore {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1349px) {
+  .offersSection h3 {
+    font-family: "titilliumweb-Bold";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 16px;
+    margin: 0 0 12px 16px;
+  }
+
+  .cardContent {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 16px;
+  }
+  .bonus {
+    font-family: "titilliumweb-SemiBold";
+    font-size: 24px;
     font-weight: 600;
-    line-height: 24px;
-    color:rgba(0, 0, 0, 1);
+    line-height: 32px;
+    color: rgba(0, 0, 0, 1);
     margin-bottom: 8px;
   }
-  .logo{
-    background-color: black;
-    width: 89px;
-    height: 89px;
-    border-radius: 4px;
-  }
-  
-  .starIcon {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-  }
-  .tickMark {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    margin-right: 8px;
-  }
-  
-  .detailsList {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    list-style: none;
-    margin-bottom: 8px;
-  }
-  
   .detailsList li {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
+    margin-bottom: 8px;
   }
-    .buttonGroup {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-  .copyCodeButton {
-    padding: 10px;
-    border: 1px solid rgba(0, 102, 204, 1);
-    border-radius: 4px;
-    font-size: 15px;
-    line-height: 20px;
+
+  .offersSection {
+    margin: 32px 32px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid rgba(218, 228, 233, 1);
+    box-shadow: 2px 2px 50px 0px rgba(133, 150, 195, 0.25);
+  }
+  .offerCard {
+    display: grid;
+    grid-template-columns: 33fr 6.24fr 0.01fr;
+    margin: 0;
+    padding: 16px 24px;
+    margin-bottom: 20px;
+  }
+
+  .offersSection h3 {
+    font-family: "titilliumweb-Bold";
+    font-size: 24px;
     font-weight: 700;
-    cursor: pointer;
-    color: rgba(0, 102, 204, 1);
-    background-color: #fff;
-    font-family: 'titilliumweb-SemiBold';
-
+    line-height: 32px;
+    color: rgba(0, 0, 0, 1);
   }
-  .playNowButton {
-    background-color: rgba(0, 102, 204, 1);
-    color: #fff;
-    padding: 10px;
-    border: 1px solid rgba(0, 102, 204, 1);
-    border-radius: 4px;
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    font-family: 'titilliumweb-SemiBold';
+  .buttonGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
-
-@media (min-width: 768px) {
-    .cardContent{
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        gap: 16px;
-    }
-    .offerHeader {
-        display: flex;
-        flex-direction: row;
-        gap: 24px;
-        margin-bottom: 55px;
-    }
-    .list{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .buttonGroup {
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        gap: 8px;   
-        
-    }
-    .bonus{
-        margin-bottom: 2px;
-    }
-    .playNowButton .copyCodeButton{
-        padding: 16px 12px;
-    }
-} 
-
-@media screen and (min-width: 1049px) {
-    .cardContent{
-        display: grid;
-        grid-template-columns: 1fr 1.5fr ; 
-        gap: 16px;
-    }
-
-   
-    .offersSection {
-        margin: 32px 32px;
-    }
-    .offerCard{
-        display: grid;
-        grid-template-columns: 33fr 6.24fr 0.01fr;
-        margin: 0;
-        padding: 16px 24px;
-        margin-bottom: 20px;
-    }
-    .offersSection h3{
-        font-family: 'titilliumweb-Bold';
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 32px;
-        color: rgba(0, 0, 0, 1);
-    }
-    .buttonGroup {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
+  .viewMore {
+    display: block;
+  }
 }

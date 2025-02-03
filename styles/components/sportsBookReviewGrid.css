@@ -1,138 +1,152 @@
 .Header {
-    background: linear-gradient(134.42deg, #004FA1 16.18%, #17315B 100%);
-    font-family: 'titilliumweb-Bold';
-    color: #ffffff;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px;
-    padding: 10px 15px;
-  }
-
-  .hiddenMobile {
-    display: none; 
+  background: linear-gradient(134.42deg, #004fa1 16.18%, #17315b 100%);
+  font-family: "titilliumweb-Bold";
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 10px 15px;
 }
-  .reviewHeading {
-    font-size: 13px;
-    line-height: 16px;
+
+.hiddenMobile {
+  display: none;
+}
+.reviewHeading {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  padding: 8px 15px;
+  background: rgba(247, 252, 255, 1);
+  color: rgba(0, 102, 204, 1);
+  font-family: "titilliumweb-Bold";
+}
+.row {
+  display: flex;
+  margin-bottom: 8px;
+  align-items: baseline;
+  padding: 0 16px;
+}
+
+.label {
+  flex: 0 0 130px;
+  font-size: 12px;
+  color: rgba(120, 120, 120, 1);
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "titilliumweb-Regular";
+}
+.ratingScore {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 1);
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "titilliumweb-Regular";
+}
+.stars {
+  gap: 4px;
+}
+.highlight {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  font-family: "titilliumweb-Regular";
+}
+
+@media (min-width: 768px) {
+  .sportsBookGrid {
+    box-shadow: rgba(133, 150, 195, 0.26);
+    margin: 0 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(218, 228, 233, 1);
+  }
+  .reviewGridWrapper {
+    padding: 16px;
+  }
+  .Header {
+    font-size: 24px;
+    line-height: 32px;
     font-weight: 700;
-    padding: 8px 15px;
-    background: rgba(247, 252, 255, 1);
-    color:rgba(0, 102, 204, 1);
-    font-family: 'titilliumweb-Bold';
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 16px 24px;
   }
-  .row {
+  .reviewHeading {
+    font-family: "titilliumweb-Regular";
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 1);
+    align-items: center;
+    padding: 0;
+  }
+
+  .column {
+    font-family: "titilliumweb-Regular";
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    background-color: rgba(247, 252, 255, 1);
+  }
+  .reviewCell {
     display: flex;
-    margin-bottom: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 16px;
+    border-bottom: 1px solid rgba(234, 236, 240, 1);
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    border: 1px solid rgba(234, 236, 240, 1);
   }
 
+  .reviewCell > div:nth-child(1) {
+    flex: 0.8;
+  }
 
-  .label {
-    flex: 0 0 130px;
-    font-size: 12px;
-    color:rgba(120, 120, 120, 1);
-    line-height: 16px;
-    font-weight: 400;
-    font-family: 'titilliumweb-Regular';
-    padding: 8px 15px;
-  
+  .reviewCell > div:nth-child(2) {
+    flex: 0.6;
   }
-  .ratingScore{
-    font-size: 13px;
-    color:rgba(0, 0, 0, 1);
-    line-height: 16px;
-    font-weight: 400;
-    font-family: 'titilliumweb-Regular';  
-  }
-  .stars {
-    gap: 4px;
+
+  .reviewCell > div:nth-child(3) {
+    flex: 1.6;
   }
   .highlight {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 400;
-    color:rgba(0, 0, 0, 1);
-    font-family: 'titilliumweb-Regular';  
-  } 
-  
-
- @media (min-width: 768px) {
- 
-    .reviewHeading {
-        background-color:rgba(255, 255, 255, 1);
-        align-items: center;
-        padding: 0;
-      }
-    .FirstRow {
-      display: flex;
-      align-items: center;
-    }
-    .SecondRow {
-      display: flex;
-      align-items: center;
-    }
-    .column{
-        font-family: 'titilliumweb-Bold';
-        color: rgba(0, 0, 0, 1);
-        font-size: 16px;
-        line-height: 18px;
-        font-weight: 600;
-        background-color: rgba(247, 252, 255, 1);
-
-    }
-    .reviewCell {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        font-size: 14px;
-        font-weight: 700;
-        color: rgba(0, 102, 204, 1);
-        padding: 16px;
-        border-bottom: 2px solid rgba(218, 228, 233, 1);
-        text-align: left;
-        width: 100%;
-        box-sizing: border-box; 
-        align-items: center;
-      }
-      
-      .reviewCell > div:nth-child(1) {
-        flex: 0.7;
-      }
-      
-      .reviewCell > div:nth-child(2) {
-        flex: 0.5; 
-      }
-      
-      .reviewCell > div:nth-child(3) {
-        flex: 1.5; 
-      }
-
-/*     
-    .reviewCell {
-      display: grid;
-      grid-template-columns: 0.7fr 0.5fr 1.5fr;
-      font-size: 14px;
-      font-weight: 700;
-      width: 100%;
-      color: rgba(0, 102, 204, 1);
-      padding: 12px 15px;
-      border-bottom: 2px solid rgba(218, 228, 233, 1);;
-      text-align: left;
-    } */
-
-    .hiddenMobile{
-        background-color:rgba(255, 255, 255, 1);
-    }
-   .label{
+    color: rgba(0, 0, 0, 1);
+    font-family: "titilliumweb-Regular";
+    display: block;
+  }
+  .hiddenMobile {
+    background-color: rgba(247, 252, 255, 1);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+  .label {
     display: none;
-   }
-
+  }
 }
-  
-  @media (min-width: 1049px) {
-    .sportsBookGrid{
-        margin : 0 32px;
-        border-radius: 8px;
-        border: 1px solid rgba(218, 228, 233, 1);
-    }
-}  
 
+@media (min-width: 1349px) {
+  .sportsBookGrid {
+    box-shadow: rgba(133, 150, 195, 0.26);
+    margin: 0 32px;
+    border-radius: 8px;
+    border: 1px solid rgba(218, 228, 233, 1);
+  }
+  .reviewGridWrapper {
+    padding: 16px 24px;
+  }
+  .highlight {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    font-family: "titilliumweb-Regular";
+    display: block;
+  }
+}
