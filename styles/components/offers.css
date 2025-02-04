@@ -146,8 +146,7 @@
     font-weight: 700;
     line-height: 32px;
     color: rgba(0, 0, 0, 1);
-    margin-bottom: 16px;
-    margin: 0 0 12px 16px;
+    margin: 0 0 12px 0px;
   }
 
   .cardContent {
@@ -172,7 +171,7 @@
 
   .offersSection {
     margin: 32px 32px;
-    padding: 16px 24px;
+    padding: 16px 24px 0px;
     border-radius: 8px;
     border: 1px solid rgba(218, 228, 233, 1);
     box-shadow: 2px 2px 50px 0px rgba(133, 150, 195, 0.25);
@@ -185,13 +184,6 @@
     margin-bottom: 20px;
   }
 
-  .offersSection h3 {
-    font-family: "titilliumweb-Bold";
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-    color: rgba(0, 0, 0, 1);
-  }
   .buttonGroup {
     display: flex;
     flex-direction: column;

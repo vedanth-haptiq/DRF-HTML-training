@@ -8,16 +8,25 @@
   font-family: "titilliumweb-Regular";
   src: url("../../fonts/titilliumWeb-Regular.woff2") format("woff2"),
     url("../../fonts/titilliumWeb-Regular.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
 }
 @font-face {
   font-family: "titilliumweb-SemiBold";
   src: url("../../fonts/titilliumWeb-SemiBold.woff2") format("woff2"),
     url("../../fonts/titilliumWeb-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
 }
 @font-face {
   font-family: "titilliumweb-Bold";
   src: url("../../fonts//titilliumweb-bold.woff2") format("woff2"),
     url("../../fonts/titilliumweb-bold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
 }
 
 * {

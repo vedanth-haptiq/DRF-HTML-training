@@ -62,9 +62,25 @@
   position: absolute;
   width: 100%;
   display: none;
-  color: rgba(120, 120, 120, 1);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(34, 34, 34, 1);
+  max-height: 156px;
+  overflow-y: auto;
+}
+.dropdownList::-webkit-scrollbar {
+  width: 8px;
 }
 
+.dropdownList::-webkit-scrollbar-thumb {
+  background: rgba(218, 228, 233, 1);
+  border-radius: 8px;
+}
+
+.dropdownList::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .dropdownItem {
   padding: 10px;
   cursor: pointer;

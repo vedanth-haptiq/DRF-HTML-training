@@ -103,16 +103,17 @@
   }
 
   .reviewCell > div:nth-child(1) {
-    flex: 0.8;
+    flex: 1;
   }
 
   .reviewCell > div:nth-child(2) {
-    flex: 0.6;
+    flex: 0.9;
   }
 
   .reviewCell > div:nth-child(3) {
     flex: 1.6;
   }
+
   .highlight {
     font-size: 16px;
     line-height: 20px;
@@ -128,6 +129,9 @@
   }
   .label {
     display: none;
+  }
+  .row {
+    padding: 0;
   }
 }
 

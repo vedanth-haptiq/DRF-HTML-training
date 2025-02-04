@@ -1,11 +1,10 @@
 .newsContainer {
   font-family: "titilliumweb-Regular";
   overflow: hidden;
+}
+.newsWrapper {
   margin-bottom: 20px;
-  border-radius: 8px;
-  margin: 0 16px 0 16px;
-  border: 1px solid rgba(218, 228, 233, 1);
-  box-shadow: rgba(133, 150, 195, 0.26);
+  padding: 0 16px 0 16px;
 }
 
 .header {
@@ -17,12 +16,12 @@
   font-weight: 700;
   line-height: 24px;
   text-align: left;
+  margin-bottom: 12px;
 }
 .newsList {
   display: none;
 }
 .newsItem {
-  padding: 12px 15px;
   border-bottom: 1px solid #ddd;
 }
 .newsItem:last-child {
@@ -40,7 +39,7 @@
   margin-bottom: 10px;
 }
 .newsItems {
-  padding: 12px 15px;
+  padding: 12px 0;
   border-bottom: 1px solid #ddd;
 }
 .author {
@@ -114,10 +113,27 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    background: linear-gradient(134.42deg, #004fa1 16.18%, #17315b 100%);
+    font-family: "titilliumweb-Bold";
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .newsContainer {
+    margin: 0 16px;
+    padding: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(218, 228, 233, 1);
+    box-shadow: rgba(133, 150, 195, 0.26);
+  }
   .newsWrapper {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 16px 0 16px;
+    padding: 0 8px 0 8px;
   }
   .featuredNews {
     flex: 1;
@@ -143,28 +159,20 @@
 }
 
 @media screen and (min-width: 1349px) {
-  .header {
-    background: linear-gradient(134.42deg, #004fa1 16.18%, #17315b 100%);
-    font-family: "titilliumweb-Bold";
-    color: rgba(255, 255, 255, 1);
-    padding: 10px;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-    text-align: left;
-  }
-  .newsItem {
-    width: 609px;
-  }
-  .newsWrapper {
-    padding: 0 16px 0 16px;
-  }
   .newsContainer {
-    margin: 0 32px 0 32px;
+    margin: 0 32px;
+    border-radius: 8px;
+    border: 1px solid rgba(218, 228, 233, 1);
+    box-shadow: rgba(133, 150, 195, 0.26);
   }
   .header {
     padding: 10px 24px;
   }
+
+  .newsWrapper {
+    padding: 0 16px 0 16px;
+  }
+
   .viewMore {
     display: block;
     text-align: center;

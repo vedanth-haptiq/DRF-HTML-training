@@ -12,7 +12,7 @@
 .reviewCard {
   border: 1px solid rgba(218, 228, 233, 1);
   border-radius: 8px;
-  margin: 15px 20px;
+  margin: 16px;
   padding: 16px;
   box-shadow: 2px 2px 50px 0px rgba(133, 150, 195, 0.25);
 }
